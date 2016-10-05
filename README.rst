@@ -4,6 +4,9 @@
 .. image:: https://img.shields.io/github/license/mashape/apistatus.svg
     :target: https://github.com/luminousmen/django-sql/blob/master/LICENCE
 
+.. image:: https://coveralls.io/repos/github/luminousmen/django-sql/badge.svg?branch=master
+    :target: https://coveralls.io/github/luminousmen/django-sql?branch=master
+
 
 Django-SQL
 ====
