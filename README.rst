@@ -1,3 +1,10 @@
+.. image:: https://travis-ci.org/luminousmen/django-sql.svg?branch=master
+    :target: https://travis-ci.org/luminousmen/django-sql
+
+.. image:: https://img.shields.io/github/license/mashape/apistatus.svg
+    :target: https://github.com/luminousmen/django-sql/blob/master/LICENCE
+
+
 Django-SQL
 ====
 A simple app for executing SQL queries in Django admin panel.
