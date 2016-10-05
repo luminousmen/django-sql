@@ -10,10 +10,10 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-sql',
     version='1.0',
-    packages=find_packages(),
+    packages=find_packages(exclude=['sqlapp.tests']),
     include_package_data=True,
     license='MIT License',
-    description='A simple app for executing SQL queries in Django admin',
+    description='A simple app for executing SQL queries in Django admin panel',
     long_description=README,
     author='Kirill Bobrov',
     author_email='miaplanedo@gmail.com',

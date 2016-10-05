@@ -1,12 +1,18 @@
 Django-SQL
 ====
-A simple app for executing SQL queries in Django admin
+A simple app for executing SQL queries in Django admin panel.
+
+.. warning::
+
+   Do not install this app if you afraid of consequences of giving access to database from admin panel.
+
 
 ============
 Requirements
 ============
 
 * Python3
+* Django 1.9
 
 
 ============
