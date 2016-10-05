@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
-    description='A simple ',
+    description='A simple app for executing SQL queries in Django admin',
     long_description=README,
     author='Kirill Bobrov',
     author_email='miaplanedo@gmail.com',
