@@ -29,6 +29,7 @@ class SQLForm(ModelForm):
         }
 
 
+@staff_member_required
 def execute_sql(request):
 
     context = {}
@@ -46,11 +47,11 @@ def execute_sql(request):
         with connection.cursor() as cursor:
             try:
                 cursor.execute(query)
-            except Exception as e:
-                context['info'] = e
+            except Exception as error:
+                context['info'] = error
             else:
                 if cursor.description:
-                    context['header'] = [e[0] for e in cursor.description]
+                    context['header'] = [error[0] for error in cursor.description]
                     context['rows'] = cursor.fetchall()
                 else:
                     context['info'] = 'No result'
