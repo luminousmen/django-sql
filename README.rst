@@ -22,6 +22,7 @@ Add to your INSTALLED_APPS in settings.py:
 
 
 .. code-block::
+
     INSTALLED_APPS = [
       ...
       'sql',
