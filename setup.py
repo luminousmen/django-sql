@@ -30,6 +30,7 @@ setup(
     license='MIT License',
     description='A simple app for executing SQL queries in Django admin panel',
     long_description=README,
+    url='https://github.com/luminousmen/django-sql',
     author='Kirill Bobrov',
     author_email='miaplanedo@gmail.com',
     classifiers=[
