@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/luminousmen/django-sql.svg?branch=master)](https://travis-ci.org/luminousmen/django-sql)
-
 [![Licence](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/luminousmen/django-sql/blob/master/LICENCE)
-
 [![Coverage Status](https://coveralls.io/repos/github/luminousmen/django-sql/badge.svg?branch=master)](https://coveralls.io/github/luminousmen/django-sql?branch=master)
 
 
