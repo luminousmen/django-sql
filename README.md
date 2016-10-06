@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/luminousmen/django-sql.svg?branch=master)](https://travis-ci.org/luminousmen/django-sql)
-[![Licence](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/luminousmen/django-sql/blob/master/LICENCE)
 [![Coverage Status](https://coveralls.io/repos/github/luminousmen/django-sql/badge.svg?branch=master)](https://coveralls.io/github/luminousmen/django-sql?branch=master)
+[![PyPI version](https://badge.fury.io/py/django-sql.svg)](https://badge.fury.io/py/django-sql)
+[![Licence](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/luminousmen/django-sql/blob/master/LICENCE)
 
 
 Django-SQL
@@ -21,7 +22,7 @@ A simple app for executing SQL queries in Django admin panel.
 ##### Installation
 
 ```
-    pip install git+https://github.com/luminousmen/django-sql.git
+    pip install django-sql
 ```
 
 Add to your `INSTALLED_APPS` in `settings.py`:
