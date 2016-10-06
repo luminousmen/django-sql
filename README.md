@@ -41,3 +41,8 @@ Add to your `urls.py`:
 ```
     url(r'^admin/sql/(?:sql/)?$', execute_sql, name='sql'),
 ```
+
+##### Contributors
+
+* [luminousmen](https://github.com/luminousmen)
+* [un-def](https://github.com/un-def)
