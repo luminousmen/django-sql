@@ -1,8 +1,18 @@
 import os
+import io
 from setuptools import find_packages, setup
 
-with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
-    README = readme.read()
+with io.open('README.md', encoding='utf-8') as f:
+    README = f.read()
+try:
+    import pypandoc
+    README = pypandoc.convert(README, 'rst', 'md')
+    README = README.replace('\r', '')
+    with io.open('README.rst', mode='w', encoding='utf-8') as f:
+        f.write(README)
+except (ImportError, OSError):
+    print("!!! Can't convert README.md - install pandoc and/or pypandoc.")
+
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
