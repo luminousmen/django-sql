@@ -43,8 +43,10 @@ Add to your `urls.py`:
    
    urlpatterns = [
       url(r'^admin/sqlapp/(?:sql/)?$', execute_sql, name='sql'),
+      url(r'^admin/', include(admin.site.urls), name='admin'),
    ]
 ```
+**Note:** The `sqlapp` URL pattern must come BEFORE the `admin` pattern as shown above.
 
 ##### Contributors
 
