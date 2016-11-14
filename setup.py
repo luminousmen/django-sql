@@ -14,10 +14,6 @@ try:
 except (ImportError, OSError):
     print("!!! Can't convert README.md - install pandoc and/or pypandoc.")
 
-with io.open('requirements_dev.txt', encoding='utf8') as f:
-    install_requires = [l.strip() for l in f.readlines() if
-                        l.strip() and not l.startswith('#')]
-
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
@@ -26,7 +22,6 @@ setup(
     version='1.0.1',
     packages=find_packages(exclude=['sqlapp.tests']),
     include_package_data=True,
-    install_requires=install_requires,
     license='MIT License',
     description='A simple app for executing SQL queries in Django admin panel',
     long_description=README,

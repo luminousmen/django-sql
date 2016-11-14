@@ -2,5 +2,6 @@
 README.rst
 .coverage
 dist/
+.eggs/
 django_sql.egg-info/
 demo/db.sqlite3
