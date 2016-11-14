@@ -1,5 +1,6 @@
 *.pyc
 README.rst
+.coverage
 dist/
 django_sql.egg-info/
 demo/db.sqlite3

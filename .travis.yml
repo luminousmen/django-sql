@@ -5,11 +5,11 @@ python:
   - "3.4"
   - "3.5"
 install:
-  - pip install -r requirements.txt
+  - pip install -r requirements_dev.txt
   - pip install coveralls
   - python setup.py develop
 script:
   - cd demo
-  - coverage run --source='../sql' manage.py test sql
+  - coverage run --source='../sqlapp' manage.py test sqlapp
 after_success:
 - coveralls
