@@ -31,7 +31,7 @@ Add to your `INSTALLED_APPS` in `settings.py`:
 ```
     INSTALLED_APPS = [
       ...
-      'sql',
+      'sqlapp',
     ]
 ```
 
@@ -39,7 +39,7 @@ Add to your `urls.py`:
 
 
 ```
-    url(r'^admin/sql/(?:sql/)?$', execute_sql, name='sql'),
+    url(r'^admin/sqlapp/(?:sql/)?$', execute_sql, name='sql'),
 ```
 
 ##### Contributors

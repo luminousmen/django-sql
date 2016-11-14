@@ -1,0 +1,4 @@
+include LICENCE
+include README.md
+include requirements_dev.txt
+recursive-include sqlapp/templates *

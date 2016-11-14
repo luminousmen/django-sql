@@ -2,13 +2,9 @@
 
 from __future__ import unicode_literals
 
-from django.contrib.auth.models import AnonymousUser, User
+from django.contrib.auth.models import User
 from django.test import TestCase, RequestFactory, Client
-from django.contrib.admin.sites import AdminSite
 from django.core.urlresolvers import reverse
-
-from ..admin import SQLAdmin
-from ..sqlapp import execute_sql
 
 
 class AdminTests(TestCase):
@@ -44,4 +40,5 @@ class AdminTests(TestCase):
             'query': "select *"
         }, follow=True)
         self.assertEqual(response.status_code, 200)
-        self.assertTrue("<pre>no tables specified</pre>" in str(response.content))
+        self.assertTrue("<pre>no tables specified</pre>"
+                        in str(response.content))

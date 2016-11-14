@@ -51,7 +51,8 @@ def execute_sql(request):
                 context['info'] = error
             else:
                 if cursor.description:
-                    context['header'] = [error[0] for error in cursor.description]
+                    context['header'] = [error[0] for error
+                                         in cursor.description]
                     context['rows'] = cursor.fetchall()
                 else:
                     context['info'] = 'No result'
@@ -62,7 +63,7 @@ def execute_sql(request):
     context['form'] = form
     context['title'] = "SQL"
 
-    return render(request, 'sql/sql.html', context)
+    return render(request, 'sqlapp/sqlapp.html', context)
 
 
 def format_sql(query):

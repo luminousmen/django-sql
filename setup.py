@@ -2,6 +2,7 @@ import os
 import io
 from setuptools import find_packages, setup
 
+
 with io.open('README.md', encoding='utf-8') as f:
     README = f.read()
 try:
@@ -13,8 +14,7 @@ try:
 except (ImportError, OSError):
     print("!!! Can't convert README.md - install pandoc and/or pypandoc.")
 
-
-with io.open('requirements.txt', encoding='utf8') as f:
+with io.open('requirements_dev.txt', encoding='utf8') as f:
     install_requires = [l.strip() for l in f.readlines() if
                         l.strip() and not l.startswith('#')]
 
@@ -23,7 +23,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-sql',
-    version='1.0',
+    version='1.0.1',
     packages=find_packages(exclude=['sqlapp.tests']),
     include_package_data=True,
     install_requires=install_requires,
