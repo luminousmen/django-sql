@@ -28,7 +28,7 @@ A simple app for executing SQL queries in Django admin panel.
 Add to your `INSTALLED_APPS` in `settings.py`:
 
 
-```
+```python
     INSTALLED_APPS = [
       ...
       'sqlapp',
@@ -38,9 +38,15 @@ Add to your `INSTALLED_APPS` in `settings.py`:
 Add to your `urls.py`:
 
 
+```python
+   from sqlapp.sqlapp import execute_sql
+   
+   urlpatterns = [
+      url(r'^admin/sqlapp/(?:sql/)?$', execute_sql, name='sql'),
+      url(r'^admin/', include(admin.site.urls), name='admin'),
+   ]
 ```
-    url(r'^admin/sqlapp/(?:sql/)?$', execute_sql, name='sql'),
-```
+**Note:** The `sqlapp` URL pattern must come BEFORE the `admin` pattern as shown above.
 
 ##### Contributors
 
